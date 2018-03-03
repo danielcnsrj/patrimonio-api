@@ -9,6 +9,12 @@ import javax.persistence.Id;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
+/**
+ * @author Daniel
+ * 
+ * Entidade que representa um item do patrimônio
+ *
+ */
 @Entity
 public class Item {
 	
@@ -23,36 +29,36 @@ public class Item {
 	private String descricao;
 	
 	private LocalDate dataAquisicao;
-	
+
 	public Long getId() {
 		return id;
 	}
-	
-	public void setId ( Long id ) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	public String getEtiqueta() {
 		return etiqueta;
 	}
-	
-	public void setEtiqueta  ( String etiqueta ) {
+
+	public void setEtiqueta(String etiqueta) {
 		this.etiqueta = etiqueta;
 	}
-	
+
 	public String getDescricao() {
 		return descricao;
 	}
-	
-	public void setDescricao ( String descricao ) {
+
+	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	
-	public LocalDate dataAquisicao() {
+
+	public LocalDate getDataAquisicao() {
 		return dataAquisicao;
 	}
-	
-	public void setDataAquisicao ( LocalDate dataAquisicao ) {
+
+	public void setDataAquisicao(LocalDate dataAquisicao) {
 		this.dataAquisicao = dataAquisicao;
 	}
 
@@ -80,6 +86,8 @@ public class Item {
 			return false;
 		return true;
 	}
+	
+	
 	
 	
 }
